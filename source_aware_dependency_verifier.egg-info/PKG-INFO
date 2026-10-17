@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: source-aware-dependency-verifier
+Version: 0.1.0
+Summary: Source-aware dependency verification for LLM-generated Python code
+Requires-Python: >=3.11
+Requires-Dist: packaging>=24
+Requires-Dist: requests>=2.31
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

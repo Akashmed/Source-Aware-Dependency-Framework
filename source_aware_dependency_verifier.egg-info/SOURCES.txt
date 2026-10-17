@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+source_aware_dependency_verifier.egg-info/PKG-INFO
+source_aware_dependency_verifier.egg-info/SOURCES.txt
+source_aware_dependency_verifier.egg-info/dependency_links.txt
+source_aware_dependency_verifier.egg-info/requires.txt
+source_aware_dependency_verifier.egg-info/top_level.txt

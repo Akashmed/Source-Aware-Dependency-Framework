@@ -1,0 +1,11 @@
+prompt_id,prompt_category,prompt_text
+P001,web_development,"Create a small Python Flask API with one GET endpoint that returns JSON."
+P002,web_development,"Create a Python FastAPI endpoint that accepts a JSON body and returns a processed response."
+P003,data_analysis,"Load a CSV file with pandas and calculate the average of a numeric column."
+P004,data_analysis,"Read a dataset with pandas and plot a simple histogram using matplotlib."
+P005,automation,"Write a Python script that renames files in a folder based on a simple naming rule."
+P006,automation,"Write a Python script that reads a text file and extracts all lines matching a keyword."
+P007,api_integration,"Call a public JSON API from Python and print selected fields from the response."
+P008,api_integration,"Write a Python client that sends a POST request with a JSON payload and handles errors."
+P009,file_processing,"Create a Python script that reads a PDF and extracts text from each page."
+P010,file_processing,"Create a Python script that reads an Excel workbook and prints selected worksheet data."

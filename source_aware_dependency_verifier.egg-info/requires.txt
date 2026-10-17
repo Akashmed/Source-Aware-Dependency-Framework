@@ -1,0 +1,5 @@
+packaging>=24
+requests>=2.31
+
+[dev]
+pytest>=8

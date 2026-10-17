@@ -1,0 +1,38 @@
+{
+  "PIL": {
+    "candidates": ["Pillow"],
+    "confidence": "high",
+    "reference": "https://pypi.org/project/Pillow/",
+    "comment": "Import name and distribution name differ."
+  },
+  "cv2": {
+    "candidates": ["opencv-python"],
+    "confidence": "high",
+    "reference": "https://pypi.org/project/opencv-python/",
+    "comment": "OpenCV is commonly imported as cv2 while the PyPI distribution is opencv-python."
+  },
+  "sklearn": {
+    "candidates": ["scikit-learn"],
+    "confidence": "high",
+    "reference": "https://pypi.org/project/scikit-learn/",
+    "comment": "Import name and distribution name differ."
+  },
+  "bs4": {
+    "candidates": ["beautifulsoup4"],
+    "confidence": "high",
+    "reference": "https://pypi.org/project/beautifulsoup4/",
+    "comment": "Top-level import name is abbreviated relative to the distribution name."
+  },
+  "yaml": {
+    "candidates": ["PyYAML"],
+    "confidence": "high",
+    "reference": "https://pypi.org/project/PyYAML/",
+    "comment": "Import and distribution names differ in spelling and case."
+  },
+  "dateutil": {
+  "candidates": ["python-dateutil"],
+  "confidence": "high",
+  "reference": "https://pypi.org/project/python-dateutil/",
+  "comment": "The official PyPI project page states that the importable name is dateutil and the installation/distribution name is python-dateutil."
+}
+}
