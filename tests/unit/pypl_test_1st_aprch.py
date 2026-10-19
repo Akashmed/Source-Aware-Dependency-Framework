@@ -1,31 +1,29 @@
 # direct pypl client test
 
+import sys
 from tempfile import TemporaryDirectory
+from pathlib import Path
 
-from src.pypi_client import PyPIClient
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
+from src.analysis_runner import analyse_code
 
-packages_to_test = (
-    "requests",
-    "Pillow",
-    "PIL",
-    "your-package-name",
-)
 
 with TemporaryDirectory() as cache_dir:
-    client = PyPIClient(
+    analysis = analyse_code(
+        "import requests\n"
+        "import PIL\n"
+        "import dateutil\n",
+        sample_id="DIRECT_PYPI_CHECK",
+        method="PROPOSED",
         cache_dir=cache_dir,
-        timeout=10,
-        retries=2,
     )
 
-    for package_name in packages_to_test:
-        result = client.get_project(package_name)
-
-        print(f"Package: {package_name}")
-        print(f"Normalized name: {result.project}")
-        print(f"HTTP status: {result.status}")
-        print(f"Exists: {result.exists}")
-        print(f"From cache: {result.from_cache}")
+    for result in analysis.results:
+        print(f"Import: {result.occurrence.import_name}")
+        print(f"Distribution: {result.distribution}")
+        print(f"Candidates: {result.candidates}")
+        print(f"Label: {result.label}")
+        print(f"HTTP status: {result.registry_status}")
         print(f"Error: {result.error}")
         print("-" * 40)
