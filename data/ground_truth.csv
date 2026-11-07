@@ -1,6 +1,6 @@
 occurrence_id,ground_truth_label,ground_truth_distribution,error_category,evidence_type,evidence_reference,certainty,review_status,evidence_notes,reviewer,review_date
 DEMO001:1,STANDARD_LIBRARY,,STDLIB_AS_DEPENDENCY,pyton_documentation,"https://docs.python.org/3.11/library/os.html",high,REVIEWED,"os is part of the Python standard library.",Akash,2026-10-16
-DEMO001:2,IMPORT_DISTRIBUTION_MISMATCH,python-dateutil,NO_KNOWN_ERROR,python_documentation,"https://pypi.org/project/torch/",high,REVIEWED,"The import statement 'import torch' corresponds to the distribution 'torch'.",Akash,2026-10-16
+DEMO001:2,RESOLVED_EXTERNAL,python-dateutil,IMPORT_DISTRIBUTION_MISMATCH,python_documentation,"https://pypi.org/project/torch/",high,REVIEWED,"The import statement 'import torch' corresponds to the distribution 'torch'.",Akash,2026-10-16
 DEMO002:1,EXACT_PYPI_MATCH,torch,NO_KNOWN_ERROR,python_documentation,"https://pypi.org/project/torch/",high,REVIEWED,"The import statement 'import torch' corresponds to the distribution 'torch'.",Akash,2026-10-16
 DEMO002:2,EXACT_PYPI_MATCH,torch,NO_KNOWN_ERROR,python_documentation,"https://pypi.org/project/torch/",high,REVIEWED,"The import statement 'import torch' corresponds to the distribution 'torch'.",Akash,2026-10-16
 DEMO002:3,EXACT_PYPI_MATCH,torch,NO_KNOWN_ERROR,python_documentation,"https://pypi.org/project/torch/",high,REVIEWED,"The import statement 'import torch' corresponds to the distribution 'torch'.",Akash,2026-10-16

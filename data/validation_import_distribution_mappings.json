@@ -1,0 +1,19 @@
+{
+  "google": {
+    "candidates": [
+      "google-auth",
+      "google-api-core"
+    ],
+    "confidence": "high",
+    "reference": "https://packaging.python.org/en/latest/guides/packaging-namespace-packages/",
+    "comment": "CONTROLLED AMBIGUITY FIXTURE ONLY. The google namespace can be contributed to by multiple distributions. google-auth documents the google.auth package (https://google-auth.readthedocs.io/en/latest/reference/google.html); google-api-core contains modules under google.api_core (https://github.com/googleapis/google-cloud-python/tree/main/packages/google-api-core). A bare import google does not identify which subpackage/provider the code intends. Do not treat this as a universal mapping for every google.* import."
+  },
+  "internal_reporting_sdk_demo": {
+    "candidates": [
+      "internal-reporting-sdk-demo"
+    ],
+    "confidence": "low",
+    "reference": "data/validation_fixtures/DEMO015-private-dependency.txt",
+    "comment": "PRIVATE controlled validation fixture. This represents a hypothetical organization-only SDK not published on public PyPI. The classifier currently looks for the word private in this mapping comment to exercise PRIVATE_OR_UNKNOWN. Use this only for validation, not as a real verified import-to-distribution mapping."
+  }
+}
